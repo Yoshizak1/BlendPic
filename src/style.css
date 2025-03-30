@@ -12,6 +12,8 @@
     --primary: rgba(92, 69, 253, 1);
     --black-p: rgba(22, 22, 22, 1);
     --gray-p: rgba(150, 151, 153, 1);
+    --gray-op7: rgba(245, 245, 245, 0.7);
+    --gray-op4: rgba(245, 245, 245, 0.4);
     --purple-p: rgba(168, 155, 255, 1);
     --white-p: rgba(245, 245, 245, 1);
     --main-grad: -webkit-linear-gradient(right,#5C45FD, #A39DD0);
@@ -22,6 +24,7 @@ html{
     color: var(--white-p);
     font-family: 'Poppins';
     margin-inline: 9.6rem;
+    overflow-x: hidden;
 }
 
 #credits{
@@ -67,7 +70,7 @@ hr{
 }
 
 #heroSection {
-    padding-top: 6rem;
+    margin-top: 6rem;
 }
 
 .heroItem{
@@ -85,16 +88,16 @@ hr{
 }
 
 #description {
-    padding-top: 3rem;
+    margin-top: 3rem;
 }
 
 #description p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     max-width: 43rem;
 }
 
 #blendButton {
-    padding-top: 3.84rem;
+    margin-top: 3.84rem;
 }
 
 #blendButton a{
@@ -102,11 +105,70 @@ hr{
     color: var(--white-p);
     border-radius: 1.92rem;
     padding: 0.9rem 2.5rem;
-    width: 9.12rem;
+    width: 8.12rem;
     height: 2.88rem;
     background-image: -webkit-linear-gradient(right,#5C45FD, #A39DD0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
 }
 
-.teste {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 18L18 6m0 0H9m9 0v9'/%3E%3C/svg%3E");
+.bola {
+    position: absolute;
+    right: 0rem;
+    top: 30vh;
+    width: 34rem;
+    height: 34rem;
+    border-radius: 100%;
+    background: radial-gradient(closest-side, rgba(92,69,253,0.5) 50%, rgba(55,41,151,0.5) 100%);
+    filter: blur(90px);
+}
+
+#upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 17.16rem;
+    background-color: rgba(0, 0, 255, 0.24);
+}
+
+#borderDotted{
+    border: 0.24rem var(--black-p) dotted;
+    padding: 3.96rem 26.16rem;
+}
+
+#cloud {
+    fill: var(--gray-s);
+}
+
+#textUpload{
+    font-size: 2.92rem;
+    color: var(--gray-op7);
+}
+
+#detailsUpload{
+    font-size: 1rem;
+    color: var(--gray-op4);
+}
+
+#uploadButton{
+    width: 10.56rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border-radius: 0.6rem;
+    margin-top: 2.76rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#uploadButton > a{
+    color: var(--purple-p);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
