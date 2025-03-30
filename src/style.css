@@ -16,7 +16,7 @@
     --gray-op4: rgba(245, 245, 245, 0.4);
     --purple-p: rgba(168, 155, 255, 1);
     --white-p: rgba(245, 245, 245, 1);
-    --main-grad: -webkit-linear-gradient(right,#5C45FD, #A39DD0);
+    --main-grad:-webkit-linear-gradient(right,var(--primary), var(--purple-p));
 }
 
 html{
@@ -65,7 +65,7 @@ hr{
 
 .itensHeader > a{
     color: var(--white-p);
-    margin-inline: 4.2rem;
+    margin-inline: 1.2rem;
     font-size: 1.40rem;
 }
 
@@ -107,32 +107,48 @@ hr{
     padding: 0.9rem 2.5rem;
     width: 8.12rem;
     height: 2.88rem;
-    background-image: -webkit-linear-gradient(right,#5C45FD, #A39DD0);
+    background-image: var(--main-grad);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
 }
 
-.bola {
+.ballGrad {
     position: absolute;
     right: 0rem;
     top: 30vh;
     width: 34rem;
     height: 34rem;
-    border-radius: 100%;
-    background: radial-gradient(closest-side, rgba(92,69,253,0.5) 50%, rgba(55,41,151,0.5) 100%);
+    background: radial-gradient(closest-side, var(--primary) 50%, rgba(55,41,151,0.5) 100%);
     filter: blur(90px);
 }
 
+#ball1{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(194,188,230,1) 2%, rgba(161,151,233,1) 32%, rgba(124,107,244,1) 68%, var(--primary)100%);
+    position: absolute;
+    top: 60rem;
+    left: 6rem; 
+}
+
 #upload{
+    background: rgba(150, 151, 153, 15%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 17.16rem;
-    background-color: rgba(0, 0, 255, 0.24);
+    padding: 3rem;
+    margin-bottom: 10rem;
 }
 
 #borderDotted{
