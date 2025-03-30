@@ -16,6 +16,7 @@
     --gray-op4: rgba(245, 245, 245, 0.4);
     --purple-p: rgba(168, 155, 255, 1);
     --white-p: rgba(245, 245, 245, 1);
+    --steel-grad:-webkit-linear-gradient(right,#1A2027, #262E38);
     --main-grad:-webkit-linear-gradient(right,var(--primary), var(--purple-p));
 }
 
@@ -204,3 +205,61 @@ hr{
     justify-content: center;
     text-align: center;
 }
+
+.fileList .fileItem {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.fileList .fileItem .fileExtension {
+    color: var(--white-p);
+    height: 4rem;
+    width: 4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #1A2027, #262E38);
+    opacity: 70%;
+    border-radius: 0.7rem;
+    border: solid 0.1rem var(--gray-p);
+
+}
+
+.fileList .fileItem .fileName {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.fileList .fileItem .fileInfo {
+    display: flex;
+    gap: 5px;
+}
+
+.fileList .fileItem .fileInfo small {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.fileList .fileItem .fileInfo .fileStatus {
+    background: -webkit-linear-gradient(right, #A39DD0, #5C45FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fileList .fileItem .fileProgressBar {
+    width: 5rem;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 30px;
+    background: var(--white-p);
+}
+
+.fileList .fileItem .fileProgressBar .fileProgress {
+    width: 2.5rem;
+    height: inherit;
+    border-radius: inherit;
+    background: red;
+}
+

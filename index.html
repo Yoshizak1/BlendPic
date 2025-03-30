@@ -31,16 +31,34 @@
     <main>
       <div id="heroSection">
         <div>
-          <h1 class="heroItem">Combine arquivos <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26.8939 0.105136L26.1813 16.227L37.7405 26.8193L22.0653 26.506L11.4536 38.664L12.1662 22.5421L0.607016 11.9498L16.2823 12.2631L26.8939 0.105136Z" fill="url(#paint0_linear_21_52)"/>
-            <defs>
-            <linearGradient id="paint0_linear_21_52" x1="8.38482" y1="15.1487" x2="38.6357" y2="26.0928" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#A39DD0"/>
-            <stop offset="1" stop-color="#5C45FD"/>
-            </linearGradient>
-            </defs>
+          <h1 class="heroItem">
+            Combine arquivos
+            <svg
+              width="38"
+              height="39"
+              viewBox="0 0 38 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.8939 0.105136L26.1813 16.227L37.7405 26.8193L22.0653 26.506L11.4536 38.664L12.1662 22.5421L0.607016 11.9498L16.2823 12.2631L26.8939 0.105136Z"
+                fill="url(#paint0_linear_21_52)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_21_52"
+                  x1="8.38482"
+                  y1="15.1487"
+                  x2="38.6357"
+                  y2="26.0928"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#A39DD0" />
+                  <stop offset="1" stop-color="#5C45FD" />
+                </linearGradient>
+              </defs>
             </svg>
-            </h1>
+          </h1>
           <h1 class="heroItem">
             <span class="mainGrad">TIFF</span> facilmente faça upload,
           </h1>
@@ -81,11 +99,34 @@
           </svg>
           <p id="textUpload">
             Arraste & salte ou <a id="browse-btn" href="">busque</a>
+          </p>
+
           <p id="detailsUpload">Suportado: Apenas .TIFF</p>
         </div>
         <div id="uploadButton">
           <a href="#">Selecionar</a>
         </div>
+
+        <ul class="fileList">
+          <li class="fileItem">
+            <div class="fileExtension">TIFF</div>
+            <div class="fileContentWrapper">
+              <div class="fileContent">
+                <div class="fileDetails">
+                  <h5 class="fileName">Image_avatar_graphic_02.jpg</h5>
+                  <div class="fileInfo">
+                    <small class="fileSize">4 MB / 8MB</small>
+                    <small class="fileDivider">•</small>
+                    <small class="fileStatus">Carregando...</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fileProgressBar">
+              <div class="progressBar"></div>
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
