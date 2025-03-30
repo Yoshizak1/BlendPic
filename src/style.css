@@ -14,7 +14,7 @@
     --gray-p: rgba(150, 151, 153, 1);
     --purple-p: rgba(168, 155, 255, 1);
     --white-p: rgba(245, 245, 245, 1);
-
+    --main-grad: -webkit-linear-gradient(right,#5C45FD, #A39DD0);
 }
 
 html{
@@ -25,6 +25,7 @@ html{
 }
 
 #credits{
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -62,9 +63,50 @@ hr{
 .itensHeader > a{
     color: var(--white-p);
     margin-inline: 4.2rem;
-    font-size: 1.5rem;
+    font-size: 1.40rem;
 }
 
-.descpition{
+#heroSection {
+    padding-top: 6rem;
+}
+
+.heroItem{
     font-size: 3em;
+}
+
+.mainGrad {
+    background: var(--main-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dot {
+    color: var(--primary);
+}
+
+#description {
+    padding-top: 3rem;
+}
+
+#description p {
+    font-size: 0.9rem;
+    max-width: 43rem;
+}
+
+#blendButton {
+    padding-top: 3.84rem;
+}
+
+#blendButton a{
+    font-size: 1.2rem;
+    color: var(--white-p);
+    border-radius: 1.92rem;
+    padding: 0.9rem 2.5rem;
+    width: 9.12rem;
+    height: 2.88rem;
+    background-image: -webkit-linear-gradient(right,#5C45FD, #A39DD0);
+}
+
+.teste {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 18L18 6m0 0H9m9 0v9'/%3E%3C/svg%3E");
 }
