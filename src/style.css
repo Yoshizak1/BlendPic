@@ -77,10 +77,11 @@ hr{
     font-size: 3em;
 }
 
-.mainGrad {
+#browse-btn {
     background: var(--main-grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 
 #dot {
@@ -94,6 +95,7 @@ hr{
 #description p {
     font-size: 1rem;
     max-width: 43rem;
+    opacity: 80%;
 }
 
 #blendButton {
@@ -102,12 +104,13 @@ hr{
 
 #blendButton a{
     font-size: 1.2rem;
+    font-weight: 400;
     color: var(--white-p);
     border-radius: 1.92rem;
     padding: 0.9rem 2.5rem;
     width: 8.12rem;
     height: 2.88rem;
-    background-image: var(--main-grad);
+    background-image: linear-gradient(to right,#8881BD, #5C45FD);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,12 +119,13 @@ hr{
 
 .ballGrad {
     position: absolute;
-    right: 0rem;
+    opacity: 40%;
+    left: 99rem;
     top: 30vh;
     width: 34rem;
     height: 34rem;
     background: radial-gradient(closest-side, var(--primary) 50%, rgba(55,41,151,0.5) 100%);
-    filter: blur(90px);
+    filter: blur(120px);
 }
 
 #ball1{
@@ -132,6 +136,16 @@ hr{
     position: absolute;
     top: 60rem;
     left: 6rem; 
+}
+
+#ball2{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(194,188,230,1) 2%, rgba(161,151,233,1) 32%, rgba(124,107,244,1) 68%, var(--primary)100%);
+    position: absolute;
+    top: 80rem;
+    right: 5rem; 
 }
 
 #upload{
@@ -149,6 +163,7 @@ hr{
     margin-top: 17.16rem;
     padding: 3rem;
     margin-bottom: 10rem;
+    
 }
 
 #borderDotted{
@@ -157,7 +172,8 @@ hr{
 }
 
 #cloud {
-    fill: var(--gray-s);
+    fill: var(--white-p);
+    opacity: 70%;
 }
 
 #textUpload{
