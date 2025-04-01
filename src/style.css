@@ -1,265 +1,317 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-:root{
-    --primary: rgba(92, 69, 253, 1);
-    --black-p: rgba(22, 22, 22, 1);
-    --gray-p: rgba(150, 151, 153, 1);
-    --gray-op7: rgba(245, 245, 245, 0.7);
-    --gray-op4: rgba(245, 245, 245, 0.4);
-    --purple-p: rgba(168, 155, 255, 1);
-    --white-p: rgba(245, 245, 245, 1);
-    --steel-grad:-webkit-linear-gradient(right,#1A2027, #262E38);
-    --main-grad:-webkit-linear-gradient(right,var(--primary), var(--purple-p));
+:root {
+  --primary: rgba(92, 69, 253, 1);
+  --black-p: rgba(22, 22, 22, 1);
+  --gray-p: rgba(150, 151, 153, 1);
+  --gray-op7: rgba(245, 245, 245, 0.7);
+  --gray-op4: rgba(245, 245, 245, 0.4);
+  --purple-p: rgba(168, 155, 255, 1);
+  --white-p: rgba(245, 245, 245, 1);
+  --steel-grad: -webkit-linear-gradient(right, #1a2027, #262e38);
+  --main-grad: -webkit-linear-gradient(right, var(--primary), var(--purple-p));
 }
 
-html{
-    background-color: var(--black-p);
-    color: var(--white-p);
-    font-family: 'Poppins';
-    margin-inline: 9.6rem;
-    overflow-x: hidden;
+html {
+  background-color: var(--black-p);
+  color: var(--white-p);
+  font-family: "Poppins";
+  margin-inline: 9.6rem;
+  overflow-x: hidden;
 }
 
-#credits{
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 4.3rem;
+#credits {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 4.3rem;
 }
 
-.highlight{
-    color: var(--primary);
+.highlight {
+  color: var(--primary);
 }
 
-header{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 6.25rem;
-    justify-content: space-between;
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 6.25rem;
+  justify-content: space-between;
 }
 
-header > div > h1{
-    font-size: 2.4em;
+header > div > h1 {
+  font-size: 2.4em;
 }
 
-hr{
-    width: 100vw;
-    position: relative;
-    left: -9.6rem; 
-    transform: scaleY(0.1);
+hr {
+  width: 100vw;
+  position: relative;
+  left: -9.6rem;
+  transform: scaleY(0.1);
 }
 
-.itensHeader{
-    display: inline;
+.itensHeader {
+  display: inline;
 }
 
-.itensHeader > a{
-    color: var(--white-p);
-    margin-inline: 1.2rem;
-    font-size: 1.40rem;
+.itensHeader > a {
+  color: var(--white-p);
+  margin-inline: 1.2rem;
+  font-size: 1.4rem;
 }
 
 #heroSection {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
-.heroItem{
-    font-size: 3em;
+.heroItem {
+  font-size: 3em;
 }
 
 #browse-btn {
-    background: var(--main-grad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
+  background: var(--main-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #dot {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 #description {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 #description p {
-    font-size: 1rem;
-    max-width: 43rem;
-    opacity: 80%;
+  font-size: 1rem;
+  max-width: 43rem;
+  opacity: 80%;
 }
 
 #blendButton {
-    margin-top: 3.84rem;
+  margin-top: 3.84rem;
 }
 
-#blendButton a{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: var(--white-p);
-    border-radius: 1.92rem;
-    padding: 0.9rem 2.5rem;
-    width: 8.12rem;
-    height: 2.88rem;
-    background-image: linear-gradient(to right,#8881BD, #5C45FD);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
+#blendButton a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white-p);
+  border-radius: 1.92rem;
+  padding: 0.9rem 2.5rem;
+  width: 8.12rem;
+  height: 2.88rem;
+  background-image: linear-gradient(to right, #8881bd, #5c45fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .ballGrad {
-    position: absolute;
-    opacity: 40%;
-    left: 99rem;
-    top: 30vh;
-    width: 34rem;
-    height: 34rem;
-    background: radial-gradient(closest-side, var(--primary) 50%, rgba(55,41,151,0.5) 100%);
-    filter: blur(120px);
+  position: absolute;
+  opacity: 40%;
+  left: 99rem;
+  top: 30vh;
+  width: 34rem;
+  height: 34rem;
+  background: radial-gradient(
+    closest-side,
+    var(--primary) 50%,
+    rgba(55, 41, 151, 0.5) 100%
+  );
+  filter: blur(120px);
 }
 
-#ball1{
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    background: radial-gradient(circle, rgba(194,188,230,1) 2%, rgba(161,151,233,1) 32%, rgba(124,107,244,1) 68%, var(--primary)100%);
-    position: absolute;
-    top: 60rem;
-    left: 6rem; 
+#ball1 {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(194, 188, 230, 1) 2%,
+    rgba(161, 151, 233, 1) 32%,
+    rgba(124, 107, 244, 1) 68%,
+    var(--primary) 100%
+  );
+  position: absolute;
+  top: 60rem;
+  left: 6rem;
 }
 
-#ball2{
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    background: radial-gradient(circle, rgba(194,188,230,1) 2%, rgba(161,151,233,1) 32%, rgba(124,107,244,1) 68%, var(--primary)100%);
-    position: absolute;
-    top: 80rem;
-    right: 5rem; 
+#ball2 {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(194, 188, 230, 1) 2%,
+    rgba(161, 151, 233, 1) 32%,
+    rgba(124, 107, 244, 1) 68%,
+    var(--primary) 100%
+  );
+  position: absolute;
+  top: 80rem;
+  right: 5rem;
 }
 
-#upload{
-    background: rgba(150, 151, 153, 15%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 17.16rem;
-    padding: 3rem;
-    margin-bottom: 10rem;
-    
+#upload {
+  background: rgba(150, 151, 153, 15%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 17.16rem;
+  padding: 3rem;
+  margin-bottom: 10rem;
 }
 
-#borderDotted{
-    border: 0.24rem var(--black-p) dotted;
-    padding: 3.96rem 26.16rem;
+#borderDotted {
+  border: 0.24rem var(--black-p) dotted;
+  padding: 3.96rem 26.16rem;
 }
 
 #cloud {
-    fill: var(--white-p);
-    opacity: 70%;
+  fill: var(--white-p);
+  opacity: 70%;
 }
 
-#textUpload{
-    font-size: 2.92rem;
-    color: var(--gray-op7);
+#textUpload {
+  font-size: 2.92rem;
+  color: var(--gray-op7);
 }
 
-#detailsUpload{
-    font-size: 1rem;
-    color: var(--gray-op4);
+#detailsUpload {
+  font-size: 1rem;
+  color: var(--gray-op4);
 }
 
-#uploadButton{
-    width: 10.56rem;
-    height: 3rem;
-    background-color: var(--primary);
-    border-radius: 0.6rem;
-    margin-top: 2.76rem;
+.fileList{
+    list-style: none;
+    width: 40%;
+    margin-top: 3rem;
+    max-height: 24rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray-p) var(--white-p);
+}
+
+.fileItem{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    gap: 0.8rem;
+    margin-bottom: 1.3rem;
 }
 
-#uploadButton > a{
-    color: var(--purple-p);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.fileList .fileItem {
-    display: flex;
-    gap: 0.9rem;
-}
-
-.fileList .fileItem .fileExtension {
-    color: var(--white-p);
+.fileExtension{
     height: 4rem;
     width: 4rem;
-    font-weight: 600;
+    color: var(--white-p);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.7rem;
     background: linear-gradient(to right, #1A2027, #262E38);
     opacity: 70%;
-    border-radius: 0.7rem;
     border: solid 0.1rem var(--gray-p);
-
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
-.fileList .fileItem .fileName {
-    font-size: 1rem;
+.fileContentWrapper{
+    flex: 1;
+}
+
+.fileContent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fileName{
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
-
-.fileList .fileItem .fileInfo {
+.fileInfo{
     display: flex;
-    gap: 5px;
+    gap: 0.3rem;
 }
 
-.fileList .fileItem .fileInfo small {
-    font-size: 0.8rem;
-    font-weight: 400;
+.fileInfo > small{
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+    display: block;
 }
 
-.fileList .fileItem .fileInfo .fileStatus {
-    background: -webkit-linear-gradient(right, #A39DD0, #5C45FD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.fileDivider{
+    color: var(--primary);
 }
 
-.fileList .fileItem .fileProgressBar {
-    width: 5rem;
-    height: 3px;
-    margin-top: 10px;
-    border-radius: 30px;
-    background: var(--white-p);
+.fileStatus{
+    background: var(--main-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.fileList .fileItem .fileProgressBar .fileProgress {
-    width: 2.5rem;
+.cancelBtn{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+}
+
+.cancelBtn > svg >:hover{
+    fill: black;
+    cursor: pointer;
+}
+
+.fileProgressBar{
+    width: 100%;
+    height: 0.18rem;
+    margin-top: 0.6rem;
+    border-radius: 1.8rem;
+    background-color: var(--white-p);
+}
+
+.fileProgress{
+    width: 50%;
     height: inherit;
     border-radius: inherit;
-    background: red;
+    background-image: linear-gradient(to left, #8881bd, #5c45fd);
 }
 
+#uploadButton {
+  width: 10.56rem;
+  height: 3rem;
+  background-color: var(--primary);
+  border-radius: 0.6rem;
+  margin-top: 2.76rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#uploadButton > a {
+  color: var(--purple-p);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
