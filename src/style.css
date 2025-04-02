@@ -203,12 +203,13 @@ hr {
 
 .fileList{
     list-style: none;
-    width: 40%;
+    width: 100%;
     margin-top: 3rem;
     max-height: 24rem;
     overflow-y: auto;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--gray-p) var(--white-p);
+    padding-inline: 7.2rem;
 }
 
 .fileItem{
@@ -283,7 +284,7 @@ hr {
 }
 
 .fileProgressBar{
-    width: 100%;
+    width: 30%;
     height: 0.18rem;
     margin-top: 0.6rem;
     border-radius: 1.8rem;
@@ -297,7 +298,12 @@ hr {
     background-image: linear-gradient(to left, #8881bd, #5c45fd);
 }
 
-#uploadButton {
+#btns{
+  display: flex;
+  gap: 3rem;
+}
+
+#selectButton, #mergeButton {
   width: 10.56rem;
   height: 3rem;
   background-color: var(--primary);
@@ -306,12 +312,19 @@ hr {
   display: flex;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
-#uploadButton > a {
+#selectButton > a,
+#mergeButton > a  {
   color: var(--purple-p);
   align-items: center;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+#selectButton > a:hover,
+#mergeButton > a:hover  {
+  text-decoration: underline;
 }
